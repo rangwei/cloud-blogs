@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+.mta/
+*.mtar
+dist/
+package-lock.json
+**/node_modules/*
