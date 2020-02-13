@@ -1,0 +1,9 @@
+---
+applications:
+- name: basicapp
+  random-route: true
+  path: .
+  buildpack: staticfile_buildpack
+  memory: 256M
+services:
+  - destination_jco

@@ -1,0 +1,116 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{i18n>title}">
+		<content>
+				<Panel>
+					<content>
+					<VBox class="sapUiSmallMargin">
+					<Text text="请选择您的职业:" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick" columns="4" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="GroupType" text="CEO"/>
+							<RadioButton groupName="GroupType" text="CTO" />
+							<RadioButton groupName="GroupType" text="COO"/>
+							<RadioButton groupName="GroupType" text="管理"/>
+							<RadioButton groupName="GroupType" text="技术"/>
+							<RadioButton groupName="GroupType" text="客户"/>
+							<RadioButton groupName="GroupType" text="其它"/>
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+					</content>
+				</Panel>
+
+				<Panel>
+					<content>
+					<VBox class="sapUiSmallMargin">
+					<Text text="1.对此次活动的总体感觉" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick1" columns="5" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="Group1" text="非常满意"/>
+							<RadioButton groupName="Group1" text="比较满意" />
+							<RadioButton groupName="Group1" text="满意"/>
+							<RadioButton groupName="Group1" text="不满意"/>
+							<RadioButton groupName="Group1" text="非常不满意"/>
+			
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+
+					<VBox class="sapUiSmallMargin">
+					<Text text="2.对分会场课程的评价" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick2" columns="5" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="Group2" text="非常满意"/>
+							<RadioButton groupName="Group2" text="比较满意" />
+							<RadioButton groupName="Group2" text="满意"/>
+							<RadioButton groupName="Group2" text="不满意"/>
+							<RadioButton groupName="Group2" text="非常不满意"/>
+			
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+
+					<VBox class="sapUiSmallMargin">
+					<Text text="3.对饮食的评价" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick3" columns="5" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="Group3" text="非常满意"/>
+							<RadioButton groupName="Group3" text="比较满意" />
+							<RadioButton groupName="Group3" text="满意"/>
+							<RadioButton groupName="Group3" text="不满意"/>
+							<RadioButton groupName="Group3" text="非常不满意"/>
+			
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+
+					<VBox class="sapUiSmallMargin">
+					<Text text="4.对环境的评价" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick4" columns="5" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="Group4" text="非常满意"/>
+							<RadioButton groupName="Group4" text="比较满意" />
+							<RadioButton groupName="Group4" text="满意"/>
+							<RadioButton groupName="Group4" text="不满意"/>
+							<RadioButton groupName="Group4" text="非常不满意"/>
+			
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+
+					<VBox class="sapUiSmallMargin">
+					<Text text="5.对行程安排的评价" textAlign="Center"/>
+					<RadioButtonGroup select=".handleClick5" columns="5" width="100%" class="sapUiMediumMarginBottom">
+						<buttons>
+							<RadioButton groupName="Group5" text="非常满意"/>
+							<RadioButton groupName="Group5" text="比较满意" />
+							<RadioButton groupName="Group5" text="满意"/>
+							<RadioButton groupName="Group5" text="不满意"/>
+							<RadioButton groupName="Group5" text="非常不满意"/>
+			
+						</buttons>
+					</RadioButtonGroup>
+				
+					</VBox>
+					</content>
+				</Panel>
+
+				<Panel>
+					<content>
+						<Button text="确认" press=".onSubmit"/>
+					</content>
+				</Panel>
+				</content>
+	</Page>
+</mvc:View>
