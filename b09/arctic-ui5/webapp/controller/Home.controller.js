@@ -52,7 +52,7 @@ sap.ui.define([
 		  onSubmit: function() {
 			var oModel = this.getView().getModel("authors");
 	  
-			const url = 'http://localhost:8081/http://localhost:1337/api/v1/feedback/create';
+			const url = 'https://arctic-backend-silly-cassowary.cfapps.eu10.hana.ondemand.com/api/v1/feedback/create';
 
 			const model = this.getView().getModel();
 			const oData = model.oData;
@@ -60,13 +60,13 @@ sap.ui.define([
 			// 	survey: {type: 0, q1: 0, q2: 0, q3: 0, q4: 0, q5: 0}
 			//   };
 
-			let result = {id: 11};
+			let result = {id: 1};
 
-			const q1 = {question: 21, answer: oData.survey.q1};
-			const q2 = {question: 22, answer: oData.survey.q2};
-			const q3 = {question: 23, answer: oData.survey.q3};
-			const q4 = {question: 24, answer: oData.survey.q4};
-			const q5 = {question: 25, answer: oData.survey.q5};
+			const q1 = {question: 1, answer: oData.survey.q1};
+			const q2 = {question: 2, answer: oData.survey.q2};
+			const q3 = {question: 3, answer: oData.survey.q3};
+			const q4 = {question: 4, answer: oData.survey.q4};
+			const q5 = {question: 5, answer: oData.survey.q5};
 
 			result.answers = [q1, q2, q3, q4, q5];
 

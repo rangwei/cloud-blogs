@@ -250,10 +250,11 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+    onlyAllowOrigins: [
+      'https://arctic-chatty-jackal.cfapps.eu10.hana.ondemand.com'
+      // 'https://example.com',
+      // 'https://staging.example.com',
+    ],
 
 
     /***************************************************************************

@@ -1,9 +1,7 @@
 ---
 applications:
-- name: basicapp
+- name: arctic
   random-route: true
   path: .
   buildpack: staticfile_buildpack
   memory: 256M
-services:
-  - destination_jco
